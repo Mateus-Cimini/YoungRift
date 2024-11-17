@@ -43,6 +43,7 @@ sidebarLink.forEach(l => l.addEventListener('click', linkColor))
 const themeButton = document.getElementById('theme-button');
 const darkTheme = 'darktheme'
 const iconTheme = 'ri-sun-fill'
+const headerImg = document.getElementById('header-img')
 
 // Tópico selecionado anteriormente (se o usuário tiver selecionado)
 const selectedTheme = localStorage.getItem('selected-theme');
@@ -64,8 +65,16 @@ if (selectedTheme) {
 // Ative/desative o tema manualmente com o botão
 themeButton.addEventListener('click', () => {
     // Adicionar ou remover o tema escuro / ícone
-    document.body.classList.toggle('dark-theme')
-    themeButton.classList.toggle(iconTheme)
+    document.body.classList.toggle('dark-theme');
+    themeButton.classList.toggle(iconTheme);
+    
+    // Troca a imagem do header com base no tema atual
+    if (document.body.classList.contains('dark-theme')) {
+        headerImg.src = 'img/young-laranja-azulescuro-icon.png'; // Caminho para a imagem do tema escuro
+    } else {
+        headerImg.src = 'img/young-laranjaebranco-icon.png'; // Caminho para a imagem do tema claro
+    }
+
     // Salvamos o tema e o ícone atual que o usuário escolheu
     localStorage.setItem('selected-theme', getCurrentTheme());
     localStorage.setItem('selected-icon', getCurrentIcon());

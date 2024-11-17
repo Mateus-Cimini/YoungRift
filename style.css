@@ -68,6 +68,11 @@ body.dark-theme {
 }
 
 
+.dark-theme .navbar-toggler-icon {
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30'%3E%3Cpath stroke='white' stroke-width='3' d='M5 10h20M5 20h20'/%3E%3C/svg%3E");
+}
+
+
 
 
 /* REUTILIZANDO CLASSES CSS */
@@ -107,7 +112,7 @@ body.dark-theme {
 }
 
 .header-logo img {
-    width: 1.5rem;
+    width: 3.5rem;
 }
 
 .header-logo span {
