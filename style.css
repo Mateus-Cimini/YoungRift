@@ -108,7 +108,7 @@ a {
 
 .sidebar {
     position: fixed;
-    right: 0%;
+    right: 120%;
     top: 0;
     bottom: 0;
     z-index: var(--z-fixed);
@@ -244,7 +244,11 @@ a {
 
 /* show sidebar */
 .show-sidebar {
-    right: 0;
+    right: 0;   
+}
+
+.show-sidebar span {
+    display: none;
 }
 
 /* active link */
@@ -262,9 +266,8 @@ a {
 }
 
 /* BREACKPOINTS */
-/* mobile */
-
-@media screen and (max-width: 360px) {
+/* mobile  0 - 640px */
+@media screen and (max-width: 640px) {
     .header-container {
         padding-inline: 1rem;
     }
@@ -292,6 +295,26 @@ a {
     .sidebar-title {
         padding-inline: .5rem;
         margin-inline: auto;
+    }
+
+    .show-sidebar {
+        right: 0;
+    }
+
+    .ri-settings-3-fill {
+        position: relative;
+        right: 15px;
+    }
+
+    .sidebar-action {
+        position: relative;
+        right: 15px;
+    }
+
+    .btn-on {
+
+        position: relative;
+        right: 120px;
     }
 }
 
