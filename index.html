@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="lib/bootstrap-css.min.css">
 
     <!--C css --> 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/carousel.css">
 
     <title>Young Rift</title>
 </head>
@@ -21,7 +22,7 @@
             <div class="container">
                 <div class="header-container">
                     <a href="#" class="header-logo">
-                        <img src="img/young-laranjaebranco-icon.png" alt="logo" id="header-img">
+                        <img src="./assets/img/young-laranjaebranco-icon.png" alt="logo" id="header-img">
                         <span>Young</span>
                     </a>
                     <div class="navbar">
@@ -40,7 +41,7 @@
             <div class="sidebar-container">
                 <div class="sidebar-user">
                     <div class="sidebar-user-img">
-                        <img src="img/teemo-icon.jpg" alt="icone de usuario" >
+                        <img src="./assets/img/teemo-icon.jpg" alt="icone de usuario" >
                     </div>
 
                     <div class="sidebar-user-info">
@@ -111,7 +112,47 @@
 
         <!-- \\\\\ MAIN ///// -->
         <main class="main-container" id="main">
-            <h1>Conteudo vai aqui</h1>
+
+            <div class="container">
+                <div id="carouselWild" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselWild" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselWild" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselWild" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+    
+                    <div class="carousel-inner">
+                        <div data-bs-interval="2000" class="carousel-item active">
+                            <img src="./assets/img/banner-heimerding.webp" alt="banner heimeding" class="d-block w-100" >
+                            <div class="carousel-caption dnone d-md-block">
+                                <h6>O Heimerdinger chegou!</h6>
+                            </div>
+                        </div>
+    
+                        <div data-bs-interval="2000" class="carousel-item">
+                            <img src="./assets/img/banner-aatrox-navaskin.jpg" alt="banner heimeding" class="d-block w-100" >
+                            <div class="carousel-caption dnone d-md-block">
+                                <h6>Aatrox Primordiano</h6>
+                            </div>
+                        </div>
+    
+                        <div data-bs-interval="2000" class="carousel-item active">
+                            <img src="./assets/img/banner-ambessa.webp" alt="banner heimeding" class="d-block w-100" >
+                            <div class="carousel-caption dnone d-md-block">
+                                <h6> A Matriarca da Guerra vai te pegar!</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselWild" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Voltar</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselWild" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Avançar</span>
+                    </button>
+                </div>
+            </div>
         </main>
 
     <script src="lib/bootstrap.bundle-js.min.js"></script>

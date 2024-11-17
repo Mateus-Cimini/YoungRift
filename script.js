@@ -70,9 +70,9 @@ themeButton.addEventListener('click', () => {
     
     // Troca a imagem do header com base no tema atual
     if (document.body.classList.contains('dark-theme')) {
-        headerImg.src = 'img/young-laranja-azulescuro-icon.png'; // Caminho para a imagem do tema escuro
+        headerImg.src = './assets/img/young-laranja-azulescuro-icon.png'; // Caminho para a imagem do tema escuro
     } else {
-        headerImg.src = 'img/young-laranjaebranco-icon.png'; // Caminho para a imagem do tema claro
+        headerImg.src = './assets/img/young-laranjaebranco-icon.png'; // Caminho para a imagem do tema claro
     }
 
     // Salvamos o tema e o ícone atual que o usuário escolheu

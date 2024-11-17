@@ -286,6 +286,10 @@ body.dark-theme {
     background-color: var(--first-color);
 }
 
+
+
+
+
 /* BREACKPOINTS */
 /* mobile  0 - 480px */
 @media screen and (max-width: 480px) {
