@@ -18,16 +18,18 @@
     <div class="container">
         <!-- \\\\\ HEADER ///// -->
         <header class="header">
-            <div class="header-container">
-                <a href="#" class="header-logo">
-                    <!-- trocar a cor do logo -->
-                    <img src="img/young-icon.png" alt="logo" width="30">
-                    <span>Young</span>
-                </a>
-                <div class="navbar">
-                    <button type="button" class="navbar-toggler" data-bs-toggler="collapse" data-bs-target="">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+            <div class="container">
+                <div class="header-container">
+                    <a href="#" class="header-logo">
+                        <!-- trocar a cor do logo -->
+                        <img src="img/young-icon.png" alt="logo" width="30">
+                        <span>Young</span>
+                    </a>
+                    <div class="navbar">
+                        <button type="button" class="navbar-toggler" data-bs-toggler="collapse" data-bs-target="">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </header>
@@ -39,7 +41,7 @@
             <div class="sidebar-container">
                 <div class="sidebar-user">
                     <div class="sidebar-user-img">
-                        <img src="img/teemo-icon.jpg" alt="icone de usuario" width="50">
+                        <img src="img/teemo-icon.jpg" alt="icone de usuario" >
                     </div>
 
                     <div class="sidebar-user-info">
@@ -53,32 +55,56 @@
                         <h3 class="sidebar-title">Outros Topicos</h3>
 
                         <div class="sidebar-list">
-                            <a href="#" class="sidebar-link-active-link">
+                            <a href="#" class="sidebar-link active-link ">
                                 <i class="ri-home-2-fill"></i>
                                 <span>Home</span>
                             </a>
 
-                            <a href="#" class="sidebar-link-active-link">
-                                <i class="ri-home-2-fill"></i>
-                                <span>Home</span>
+                            <a href="#" class="sidebar-link ">
+                                <i class="ri-bar-chart-box-fill"></i>
+                                <span>Path Notes</span>
                             </a>
 
-                            <a href="#" class="sidebar-link-active-link">
-                                <i class="ri-home-2-fill"></i>
-                                <span>Home</span>
+                            <a href="#" class="sidebar-link ">
+                                <i class="ri-t-shirt-2-fill"></i>
+                                <span>Novas Skins</span>
                             </a>
 
-                            <a href="#" class="sidebar-link-active-link">
-                                <i class="ri-home-2-fill"></i>
-                                <span>Home</span>
+                            <a href="#" class="sidebar-link ">
+                                <i class="ri-calendar-fill"></i>
+                                <span>Eventos</span>
                             </a>
 
-                            <a href="#" class="sidebar-link-active-link">
-                                <i class="ri-home-2-fill"></i>
-                                <span>Home</span>
+                            <a href="#" class="sidebar-link ">
+                                <i class="ri-gamepad-fill"></i>
+                                <span>Monte sua Pool</span>
                             </a>
                         </div>
                     </div>
+
+                    <div>
+                        <h3 class="sidebar-title">Configurações</h3>
+
+                        <div class="sidebar-list">
+                            <a href="#" class="sidebar-link ">
+                                <i class="ri-settings-3-fill"></i>
+                                <span>Configuração</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-action ">
+                    <button>
+                        <i class="ri-moon-clear-fill sidebar__link sidebar-theme" id="theme-button">
+                            <span>Theme</span>
+                        </i>
+                    </button>
+
+                    <button class="sidebar-link">
+                        <i class="ri-logout-box-r-fill"></i>
+                        <span>Log Out</span>
+                    </button>
                 </div>
             </div>
         </nav>
@@ -88,7 +114,8 @@
         <main class="main-container" id="main">
             <h1>Conteudo vai aqui</h1>
         </main>
-    </div>
+
     <script src="lib/bootstrap.bundle-js.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
