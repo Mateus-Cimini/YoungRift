@@ -1,0 +1,102 @@
+/* VARIAVEIS CSS */
+:root {
+    --header-height: 3.5rem;
+
+    /* cores */
+    --first-color: hsl(228, 85%, 63%);
+    --title-color: hsl(228, 18%, 16%);
+    --text-color: hsl(228, 8%, 56%);
+    --body-color: hsl(228, 100%, 99%);
+    --shadow-color: hsla(228, 80%, 4%, .1);
+
+    /* typografia */
+    /* .5rem = 8px | 1rem = 16px etc... */
+    --normal-font-size: .938rem;
+    --smaller-fint-size: .75rem;
+    --tiny-font-size: .75rem;
+
+    /* font weight */
+    --font-regular: 400;
+    --font-semi-bold: 600;
+
+    /*  z-index */
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+/* BASE */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+body {
+    font-size: var(--normal-font-size) ;
+    background-color: var(--body-color);
+    color: var(--text-color);
+    transition: background-color .4s;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* VARIAVEIS DO MODO DARK */
+/* quando a funçao do dark mode for criada fazere o css dela */
+
+
+/* REUTILIZANDO CLASSES CSS */
+.main-container {
+    margin-inline: 1.5rem;
+    padding-top: 5rem;
+}
+
+/* HEADER */
+
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    margin: .75rem;
+}
+
+.header-container {
+    width: 100%;
+    height: var(--header-height);
+    background-color: var(--body-color);
+    box-shadow: 0 2px 24px var(--shadow-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    transition: background-color .4s;
+}
+
+.header-logo {
+    display: inline-flex;
+    align-items: center;
+    column-gap: .25rem;
+}
+
+.header-logo img {
+    width: 1.5rem;
+}
+
+.header-logo span {
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+}
+
+.navbar-toggler {
+    border: none;
+}
