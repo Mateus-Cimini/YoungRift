@@ -79,3 +79,27 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme());
     localStorage.setItem('selected-icon', getCurrentIcon());
 });
+
+
+
+
+
+// CHEGOU AO FINAL DA PAGINA
+function checkScrollEnd() {
+    // Altura total da pagina (document)
+    const documentAltura = document.documentElement.scrollHeight;
+    // Altura visivel da tela (viewport)
+    const viewportALtura = window.innerHeight;
+    // Quantidade ja rolada
+    const scrollPosicao = window.scrollY;
+
+    // Verifica se chegou ao final da página
+    if (scrollPosicao + viewportALtura >= documentAltura) {
+        const mensagemFim = document.getElementById('mensagemFim');
+        const toast = new bootstrap.Toast(mensagemFim);
+        toast.show()
+    };
+};
+
+// Adiciona o evento de scroll à janela
+window.addEventListener('scroll', checkScrollEnd)

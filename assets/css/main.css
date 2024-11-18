@@ -8,6 +8,9 @@
     --text-color: hsl(228, 8%, 56%);
     --body-color: hsl(228, 100%, 99%);
     --shadow-color: hsla(228, 80%, 4%, .1);
+    --path-color: #30bef2;
+    --skin-color: #30f23a;
+    --evento-color: #f2df30;
 
     /* typografia */
     /* .5rem = 8px | 1rem = 16px etc... */
@@ -76,8 +79,72 @@ body.dark-theme {
     gap: 20px;
 }
 
-.novidade {
-    background-color: beige;
+.post a {
+    overflow: hidden;
+    box-shadow: 0 2px 24px var(--shadow-color);
+    box-shadow: 0px 1px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.post a img {
+    width: 100%;
+    height: 180px;
+    transition: transform 0.3s ease;
+    
+
+}
+
+.post a img:hover {
+    transform: scale(1.1);
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.post span,
+.post time {
+    font-weight: var(--font-semi-bold);
+}
+
+.post h5 {
+    color: var(--title-color);
+    
+}
+
+.path-notes {
+    color: var(--path-color);
+}
+
+.skin {
+    color: var(--skin-color);
+}
+
+.evento {
+    color: var(--evento-color);
+}
+
+.footer * , .header *{
+    color: #fff;
+}
+
+.footer i:hover {
+    color: var(--first-color);
+}
+
+.contact-info a:hover {
+    color: var(--first-color);
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.social-icons a:hover {
+    color: #ff9900;
 }
 
 /* BREACKPOINTS */
