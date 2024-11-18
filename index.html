@@ -9,9 +9,11 @@
     <!-- bootstrap css -->
     <link rel="stylesheet" href="lib/bootstrap-css.min.css">
 
-    <!--C css --> 
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- css --> 
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/header&sidebar.css">
     <link rel="stylesheet" href="./assets/css/carousel.css">
+ 
 
     <title>Young Rift</title>
 </head>
@@ -111,9 +113,10 @@
     </div>
 
         <!-- \\\\\ MAIN ///// -->
+    <div class="container">
         <main class="main-container" id="main">
 
-            <div class="container">
+            <div class="containertt">
                 <div id="carouselWild" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselWild" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -152,8 +155,60 @@
                         <span class="visually-hidden">Avançar</span>
                     </button>
                 </div>
+
+                <main>
+                    <div class="content">
+
+                        <section class="destaque">
+                            <h2>Em destaque</h2>
+                            <article class="noticia">
+                                <a href="">
+                                    <img src="assets/img/banner-ambessa.webp" alt="">
+                                    <div class="title-noticia">
+                                        <h3>A nova campeã chegou, clique para saber mais!</h3>
+                                        <h4>Todos que conhecem o nome Medarda respeitam e temem a líder da família, Ambessa. Como general noxiana, ela incorpora uma combinação mortal de força implacável e determinação destemida em batalha.</h4>
+                                    </div>
+                                </a>
+                            </article>
+                        </section>
+
+                        <section class="novidade">
+                            <h2>Novidades</h2>
+
+                            <div class="container-novidade">
+                                <div class="row">
+                                    <div class="col-xl-4 col-md-6 col-sm-12">
+                                        coluna #1
+                                    </div>
+                                    <div class="col-xl-4 col-md-6 col-sm-12">
+                                        coluna #2
+                                    </div>
+                                    <div class="col-xl-4 col-md-6 col-sm-12">
+                                        coluna #3
+                                    </div>
+                                    <div class="col-xl-4 col-md-6 col-sm-12">
+                                        coluna #3
+                                    </div>
+                                    <div class="col-xl-4 col-md-6 col-sm-12">
+                                        coluna #3
+                                    </div>
+                                    <div class="col-xl-4 col-md-6 col-sm-12">
+                                        coluna #3
+                                    </div>
+                                </div>
+
+                
+                            </div>
+                        </section>
+
+                    </div>
+                </main>
             </div>
         </main>
+        
+    </div>
+        
+        
 
     <script src="lib/bootstrap.bundle-js.min.js"></script>
     <script src="script.js"></script>

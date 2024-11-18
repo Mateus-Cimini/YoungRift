@@ -1,0 +1,136 @@
+/* VARIAVEIS CSS */
+:root {
+    --header-height: 3.5rem;
+
+    /* cores */
+    --first-color: hsl(228, 85%, 63%);
+    --title-color: hsl(228, 18%, 16%);
+    --text-color: hsl(228, 8%, 56%);
+    --body-color: hsl(228, 100%, 99%);
+    --shadow-color: hsla(228, 80%, 4%, .1);
+
+    /* typografia */
+    /* .5rem = 8px | 1rem = 16px etc... */
+    --normal-font-size: .938rem;
+    --smaller-fint-size: .75rem;
+    --tiny-font-size: .75rem;
+
+    /* font weight */
+    --font-regular: 400;
+    --font-semi-bold: 600;
+
+    /*  z-index */
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+/* VARIAVEIS DO MODO DARK */
+body.dark-theme {
+    --first-color: hsl(228, 70%, 63%);
+    --title-color: hsl(228, 18%, 96%);
+    --text-color: hsl(228, 12%, 61%);
+    --body-color: hsl(228, 24%, 16%);
+    --shadow-color: hsla(228, 80%, 4%, .3)
+}
+
+.dark-theme .sidebar-content::-webkit-scrollbar {
+    background-color: hsl(228, 16%, 30%);
+}
+
+.dark-theme.sidebar-content::-webkit-scrollbar-thumb {
+    background-color: hsl(228, 16%, 40%);
+}
+
+
+
+/* GAmbiarra da porra para fazer o conteudo da pagina ficar em baixo do carousel */
+.content {
+    position: absolute;
+    top: 350px;
+    width: 86%;
+}
+
+.noticia {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.noticia img {
+    width: 320px;
+}
+
+.content h2 {
+    color: var(--first-color);
+}
+
+
+
+.destaque {
+    padding-bottom: 70px;
+}
+
+.destaque .noticia a {
+    display: flex;
+    font-size: 2em;
+    gap: 20px;
+}
+
+.novidade {
+    background-color: beige;
+}
+
+/* BREACKPOINTS */
+/* mobile  0 - 480px */
+@media screen and (max-width: 480px) {
+    .content {
+        position: absolute;
+        top: 310px;
+        width: 86%;
+    }
+
+    .noticia a {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+/* tablets 481px - 1049 */
+@media screen and (min-width: 481px) and (max-width: 1049px){
+    .content {
+
+        position: absolute;
+        top: 540px;
+        width: 86%;
+    }
+
+    .noticia a {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .noticia img {
+        width: 720px;
+    }
+}
+
+/* laptops 1050px - 1279px */
+@media screen and (min-width: 1050px) and (max-width: 1279px) {
+    .content {
+
+        position: absolute;
+        top: 630px;
+        width: 86%;
+    }
+}
+
+/* ultraWide 1280px... */
+@media screen and (min-width: 1280px) {
+    .content {
+
+        position: absolute;
+        top: 700px;
+        width: 86%;
+    }
+}
