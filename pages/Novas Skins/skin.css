@@ -210,3 +210,13 @@
 .skin {
     color: var(--skin-color);
 }
+
+.cards {
+    padding-bottom: 2rem;
+}
+
+.card-header,
+.card-body {
+    display: flex;
+    justify-content: center;
+}
