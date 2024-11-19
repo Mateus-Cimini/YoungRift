@@ -1,0 +1,207 @@
+/* VARIAVEIS CSS */
+:root {
+    --header-height: 3.5rem;
+
+    /* cores */
+    --first-color: hsl(228, 85%, 63%);
+    --title-color: hsl(228, 18%, 16%);
+    --text-color: hsl(228, 8%, 56%);
+    --body-color: hsl(228, 100%, 99%);
+    --shadow-color: hsla(228, 80%, 4%, .1);
+    --path-color: #30bef2;
+    --skin-color: #30f23a;
+    --evento-color: #f2df30;
+
+    /* typografia */
+    /* .5rem = 8px | 1rem = 16px etc... */
+    --normal-font-size: .938rem;
+    --smaller-fint-size: .75rem;
+    --tiny-font-size: .75rem;
+
+    /* font weight */
+    --font-regular: 400;
+    --font-semi-bold: 600;
+
+    /*  z-index */
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.header2 {
+    position: relative; 
+    display: block;
+}
+
+.header2 h2 {
+    color: #30bef2;
+    font-size: 3rem;
+    font-style: italic;
+}
+
+.header2 div {
+    display:flow-root;
+    position:relative;
+    top: 100px;
+}
+
+.header2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--title-color); 
+    z-index: -1;
+    transform: scale(1.2);
+    padding: 90px 0px;
+}
+
+.post a {
+    overflow: hidden;
+    box-shadow: 0 2px 24px var(--shadow-color);
+    box-shadow: 0px 1px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.post a img {
+    width: 100%;
+    height: 180px;
+    transition: transform 0.3s ease;
+    
+
+}
+
+.post a img:hover {
+    transform: scale(1.1);
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.post span,
+.post time {
+    font-weight: var(--font-semi-bold);
+}
+
+.post h5 {
+    color: var(--title-color);
+    
+}
+
+.path-notes {
+    color: var(--path-color);
+}
+
+.footer * , .header *{
+    color: #fff;
+}
+
+.footer i:hover {
+    color: var(--first-color);
+}
+
+.contact-info a:hover {
+    color: var(--first-color);
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+/* From Uiverse.io by alexmaracinaru */ 
+.cta {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.cta span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 14px;
+    padding-right: 15px;
+    text-transform: uppercase;
+}
+
+.cta svg {
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+    transform: translateX(0);
+}
+
+.cta:active svg {
+    transform: scale(0.9);
+}
+
+.hover-underline-animation {
+    position: relative;
+    color: black;
+    padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.alert {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    top: 110px;
+    gap: 30px;
+}
+
+.alert {
+    display: none;
+}
+
+.alert.show {
+    display: block;
+}
+
+#alert2 {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    top: 110px;
+    gap: 30px;
+}
+
+#alert2 {
+    display: none;
+}
+
+#alert2.show {
+    display: block;
+}
