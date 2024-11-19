@@ -220,3 +220,8 @@
     display: flex;
     justify-content: center;
 }
+
+.modal-body {
+    display: flex;
+    justify-content: center;
+}
